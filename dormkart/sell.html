@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DormKart - Sell Your Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        .header {
+            font-size: 45px;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .img1 img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .form-container {
+            width: 80%;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #000000;
+            text-align: center;
+        }
+
+        footer font {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="img1">
+        <img src="denmark.jpg" alt="DormKart">
+    </div>
+
+    <h1 class="header">DormKart - Sell Your Products</h1>
+
+    <div class="form-container">
+        <h2>Product Listing Form</h2>
+        <form action="/submit-product" method="POST" enctype="multipart/form-data">
+            
+            <input type="text" name="product_name" placeholder="Enter Product Name" required>
+
+            <textarea name="product_description" placeholder="Enter Product Description" required></textarea>
+
+            <input type="number" name="product_price" placeholder="Enter Product Price" required min="0" step="0.01">
+
+            <input type="file" name="product_image" accept="image/*" required>
+            <button type="submit" class="submit-button">Submit Listing</button>
+        </form>
+    </div>
+
+    <footer>2024 &copy; Badmosh Group <font>&hearts;</font></footer>
+
+</body>
+</html>

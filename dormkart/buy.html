@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DormKart - Buy Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        .header {
+            font-size: 45px;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .img1 img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #21974b;
+            font-weight: bold;
+        }
+
+        .add-to-cart-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #45a049;
+        }
+
+        .cart-button {
+            display: block;
+            width: 200px;
+            background-color: #21974b;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 4px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .cart-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #000000;
+            text-align: center;
+        }
+
+        footer font {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="img1">
+        <img src="denmark.jpg" alt="DormKart">
+    </div>
+
+    <h1 class="header">DormKart - Buy Products</h1>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Some description of the product here. Great for college students!</p>
+            <div class="price"></div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product Name 2</h3>
+            <p>Some description of the product here. Great for college students!</p>
+            <div class="price"></div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product Name 3</h3>
+            <p>Some description of the product here. Great for college students!</p>
+            <div class="price"></div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        
+    </div>
+
+    <a href="cart.html" class="cart-button">Go to Cart</a>
+
+    <footer>2024 &copy; Badmosh Group <font>&hearts;</font></footer>
+
+</body>
+</html>
